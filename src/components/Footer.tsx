@@ -14,22 +14,24 @@ export default function Footer() {
           <p className="text-text-muted text-lg leading-relaxed mb-10" style={{ maxWidth: '560px', margin: '0 auto 2.5rem auto' }}>
             Fale com nosso time e descubra como a tecnologia pode transformar seus resultados.
           </p>
-          <a
-            href="https://wa.me/5598984463403?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20Cuca%20Digital."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center whitespace-nowrap gap-3 brand-gradient-bg text-bg font-display font-bold text-base md:text-lg rounded-sm
-                       transition-transform duration-300 ease-out hover:scale-105 active:scale-95"
-            style={{ padding: '16px 40px', flexShrink: 0 }}
-          >
-            Quero Falar com um Especialista
-            <svg
-              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-              fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+          <div className="flex justify-center">
+            <a
+              href="https://wa.me/5598984463403?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20Cuca%20Digital."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center whitespace-nowrap gap-3 brand-gradient-bg text-bg font-display font-bold text-base md:text-lg rounded-sm
+                         transition-transform duration-300 ease-out hover:scale-105 active:scale-95"
+              style={{ padding: '16px 40px', flexShrink: 0 }}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
+              Quero Falar com um Especialista
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         {/* Footer bottom */}
