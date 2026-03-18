@@ -33,9 +33,9 @@ export default function Footer() {
         </div>
 
         {/* Footer bottom */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '2.5rem', borderTop: '1px solid var(--color-border)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <svg viewBox="0 0 64 64" style={{ height: '56px', width: '56px', flexShrink: 0 }}>
+        <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-border gap-6 md:gap-0">
+          <div className="flex items-center gap-2 md:gap-4">
+            <svg viewBox="0 0 64 64" className="h-10 w-10 md:h-14 md:w-14 flex-shrink-0">
               <defs>
                 <linearGradient id="logoGradFooter" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="#00D4FF" />
@@ -44,23 +44,23 @@ export default function Footer() {
                 </linearGradient>
               </defs>
               <rect x="2" y="2" width="60" height="60" fill="none" stroke="url(#logoGradFooter)" strokeWidth="3.5" />
-              <text x="12" y="36" fill="url(#logoGradFooter)" style={{ fontFamily: 'var(--font-display)', fontSize: '36px', fontWeight: 300 }}>
+              <text x="12" y="36" fill="url(#logoGradFooter)" className="font-display font-light text-[24px] md:text-[36px]">
                 C
               </text>
-              <text x="32" y="56" fill="url(#logoGradFooter)" style={{ fontFamily: 'var(--font-display)', fontSize: '36px', fontWeight: 300 }}>
+              <text x="32" y="56" fill="url(#logoGradFooter)" className="font-display font-light text-[24px] md:text-[36px]">
                 D
               </text>
             </svg>
-            <div style={{ display: 'flex', flexDirection: 'column', justifyItems: 'center', lineHeight: '0.95', textAlign: 'left' }}>
-              <span className="brand-gradient font-display font-black tracking-wide" style={{ fontSize: '26px' }}>
+            <div className="flex flex-col justify-center leading-[0.95] text-left">
+              <span className="brand-gradient font-display font-black tracking-wide text-[16px] md:text-[26px]">
                 CUCA
               </span>
-              <span className="brand-gradient font-display font-black tracking-wide" style={{ fontSize: '26px' }}>
+              <span className="brand-gradient font-display font-black tracking-wide text-[16px] md:text-[26px]">
                 DIGITAL
               </span>
             </div>
           </div>
-          <p className="text-text-muted text-sm">
+          <p className="text-text-muted text-sm text-center md:text-left">
             © {new Date().getFullYear()} Cuca Digital. Todos os direitos reservados.
           </p>
         </div>
