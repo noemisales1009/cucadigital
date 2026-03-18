@@ -31,9 +31,10 @@ export default function HeroSection() {
         {/* CTA */}
         <a
           href="#contato"
-          className="group inline-flex items-center gap-3 brand-gradient-bg text-bg font-display font-bold text-base md:text-lg px-10 py-4 rounded-sm
+          className="group inline-flex items-center justify-center whitespace-nowrap gap-3 brand-gradient-bg text-bg font-display font-bold text-base md:text-lg rounded-sm
                      transition-transform duration-300 ease-out
                      hover:scale-105 active:scale-95"
+          style={{ padding: '16px 40px', flexShrink: 0 }}
         >
           Quero Escalar Meu Negócio
           <svg

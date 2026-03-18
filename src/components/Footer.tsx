@@ -18,8 +18,9 @@ export default function Footer() {
             href="https://wa.me/5598984463403?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20Cuca%20Digital."
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 brand-gradient-bg text-bg font-display font-bold text-base md:text-lg px-10 py-4 rounded-sm
+            className="group inline-flex items-center justify-center whitespace-nowrap gap-3 brand-gradient-bg text-bg font-display font-bold text-base md:text-lg rounded-sm
                        transition-transform duration-300 ease-out hover:scale-105 active:scale-95"
+            style={{ padding: '16px 40px', flexShrink: 0 }}
           >
             Quero Falar com um Especialista
             <svg

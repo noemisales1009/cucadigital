@@ -54,8 +54,9 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contato"
-          className="brand-gradient-bg text-bg font-display font-bold text-sm px-5 py-2.5 rounded-sm
+          className="inline-flex items-center justify-center whitespace-nowrap brand-gradient-bg text-bg font-display font-bold text-sm rounded-sm
                      transition-transform duration-300 hover:scale-105 active:scale-95"
+          style={{ padding: '12px 28px', flexShrink: 0 }}
         >
           Fale Conosco
         </a>
