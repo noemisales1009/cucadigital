@@ -22,7 +22,7 @@ a{color:#0D1022}
 .mq{animation:mq 28s linear infinite}
 @media (prefers-reduced-motion: reduce){.mq{animation:none}}
 @media (max-width: 760px){.navx{display:none!important}}
-@media (max-width: 520px){.mside{display:none!important}}
+@media (max-width: 520px){.mside{display:none!important}.sbar{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
 @keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
@@ -299,7 +299,7 @@ details summary::-webkit-details-marker{display:none}
 <span style="display: inline-block; background: #9C85FF; color: #0D1022; font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: 999px; margin-bottom: 14px">Segurança do paciente</span>
 <h3 style="margin: 0 0 10px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em">SBAR Kids</h3>
 <p style="margin: 0 0 20px; color: #E3E5EF; font-size: 18px; line-height: 1.6">Passagem de plantão padronizada: o próximo turno recebe tudo o que importa, do mesmo jeito, sempre.</p>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 20px">
+<div class="sbar" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 20px">
 <div style="background: rgba(156,133,255,0.16); border: 1px solid rgba(156,133,255,0.4); border-radius: 12px; padding: 12px 8px; text-align: center"><p style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #C7B9FF">S</p><p style="margin: 2px 0 0; font-size: 12px; color: #C5C8DA">Situação</p></div>
 <div style="background: rgba(156,133,255,0.16); border: 1px solid rgba(156,133,255,0.4); border-radius: 12px; padding: 12px 8px; text-align: center"><p style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #C7B9FF">B</p><p style="margin: 2px 0 0; font-size: 12px; color: #C5C8DA">Breve histórico</p></div>
 <div style="background: rgba(156,133,255,0.16); border: 1px solid rgba(156,133,255,0.4); border-radius: 12px; padding: 12px 8px; text-align: center"><p style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #C7B9FF">A</p><p style="margin: 2px 0 0; font-size: 12px; color: #C5C8DA">Avaliação</p></div>
@@ -409,7 +409,7 @@ details summary::-webkit-details-marker{display:none}
 <p style="margin: 0; font-size: 19px; line-height: 1.6">A primeira conversa é sem compromisso. Conte o que você precisa e a gente monta a proposta.</p>
 <p style="margin: 0; font-size: 15px; font-weight: 600; color: #E4DDFF">Prefere falar direto?</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: -12px">
-<a href="https://wa.me/5598984831139?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cuca%20Digital%20e%20quero%20saber%20mais." target="_blank" rel="noopener" class="b-white" style="background: #FFFFFF; color: #0D1022; text-decoration: none; padding: 18px 30px; border-radius: 999px; font-weight: 700; font-size: 17px">Chamar no WhatsApp · (98) 98483-1139</a>
+<a href="https://wa.me/5598984831139?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cuca%20Digital%20e%20quero%20saber%20mais." target="_blank" rel="noopener" class="b-white" style="background: #FFFFFF; color: #0D1022; text-decoration: none; padding: 18px 30px; border-radius: 999px; font-weight: 700; font-size: 17px; text-align: center">Chamar no WhatsApp · (98) 98483-1139</a>
 <a href="mailto:contato@cucadigital.tech?subject=Quero%20saber%20mais%20sobre%20a%20Cuca%20Digital&amp;body=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%3A%0A%0A(%20)%20Treinamento%20de%20IA%0A(%20)%20An%C3%A1lise%20de%20dados%0A(%20)%20Aplicativo%0A%0AEmpresa%3A%0ANome%3A%0ATelefone%3A" style="color: #FFFFFF; text-decoration: none; padding: 18px 30px; border-radius: 999px; font-weight: 600; font-size: 17px; border: 2px solid #FFFFFF; overflow-wrap: anywhere">contato@cucadigital.tech</a>
 </div>
 </div>
