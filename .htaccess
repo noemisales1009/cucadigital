@@ -1,0 +1,25 @@
+# Segurança do site Cuca Digital (Hostinger / LiteSpeed)
+
+# Não listar arquivos das pastas
+Options -Indexes
+
+# Bloquear arquivos e pastas ocultos (.git, .htaccess...), menos o .well-known do SSL
+RedirectMatch 404 /\.(?!well-known/)
+
+# Sempre abrir com https
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set Strict-Transport-Security "max-age=31536000"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+# Se mudar o endereço do formulário (n8n) ou adicionar scripts/fontes de fora, atualize esta linha
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://n8n.cucadigital.xyz; form-action https://n8n.cucadigital.xyz; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+</IfModule>
